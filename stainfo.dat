@@ -1,0 +1,40 @@
+1 1 0 1. 1. 1. 1 TEMB 36510 
+1 1 0 1. 1. 1. 1 VC1E 36455 !Maybe affected by fault zone effects
+1 1 0 1. 1. 1. 1 FZ7  36431 
+1 1 0 1. 1. 1. 1 FZ11 36453 
+1 1 0 1. 1. 1. 1 C2E  36230 
+1 1 0 1. 1. 1. 1 VC2E 36177 
+1 1 0 1. 1. 1. 1 SC1E 36419 
+1 1 0 1. 1. 1. 1 C3E  36450 
+1 1 0 1. 1. 1. 1 FZ12 36138 
+1 1 0 1. 1. 1. 1 SC2E 36422 
+1 1 0 1. 1. 1. 1 SC3E 36437 
+1 1 0 1. 1. 1. 1 GH2E 36421 
+0 0 0 0. 0. 0. 1 FZ3  36408 
+1 1 0 1. 1. 1. 1 FZ8  36449 
+1 1 0 1. 1. 1. 1 VC4W 36446 
+1 1 0 1. 1. 1. 1 C3W  36410 
+1 1 0 1. 1. 1. 1 FZ6  36454 
+1 1 0 1. 1. 1. 1 VC5W 36440 
+1 1 0 1. 1. 1. 1 VC1W 36448 
+1 1 0 1. 1. 1. 1 FZ15 36445 !Affected by fault zone effects 
+1 1 0 1. 1. 1. 1 GH6W 36432 
+0 0 0 0. 0. 0. 1 FZ1  36407 
+1 1 0 1. 1. 1. 1 C4W  36411 
+0 0 0 1. 1. 1. 1 C12W 36229 
+1 1 0 1. 1. 1. 1 C6W  36451 
+1 1 0 1. 1. 1. 1 VC6W 36441 
+1 1 0 1. 1. 1. 1 VC2W 36447 
+1 1 0 1. 1. 1. 1 GH5W 36434 
+0 0 0 0. 0. 0. 1 C2W  36228 
+1 1 0 1. 1. 1. 1 FZ9  36443 
+1 1 0 1. 1. 1. 1 GH4W 36433 
+1 1 0 1. 1. 1. 1 GH2W 36416 
+1 1 0 1. 1. 1. 1 FZ4  36414 
+0 0 0 0. 0. 0. 1 GH1W 36415 
+1 1 0 1. 1. 1. 1 GH3W 36420
+! stations likely affected by fault zone effects: GFU, VC1E, FZ14, FZ15, GH1W, FZ1, FZ3, C1E (Kim and Dreger, 2008)
+! stations with significant site effects below 0.5 Hz: FZ1, FZ2 
+! decrease weights strongly due to fault zone effects: FZ1, C2W, FZ15, VC1E
+! decrease weights mildly due to fault zone effects: GH1W, FZ3
+! increase weights to focus on the southern rupture branch: C4W, C3W, C2E, SC1E

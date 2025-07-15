@@ -1,0 +1,5 @@
+0. 7900000.  !t1, t2
+1500  36	!number of discrete times for synt GPS, number of discrete time for real GPS
+13	!number of GPS
+1	!coseismic gps weight
+0.7	!postseismic gps weight

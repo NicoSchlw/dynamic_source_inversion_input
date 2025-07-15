@@ -1,0 +1,22 @@
+0              ! 0=forward calculation, 1=start inversion, 2=restart inversion
+24 9           ! Number of model parameters (discretization)
+-5281           ! Random seed
+1 1              ! Calculate waveforms? Reset to 1 if running inversion
+1e0 0.005 -0.03 0. 0.2 0.2 0.004 1e-2 1.e-13   !T0Min, aMin, baMin, psiMin, f0Min, fwMin, DcMin, vwMin, vinitMin
+2e8 0.1   0.03 0. 1.5 0.4 1.0 2.0  1.21e-9 !T0Max, aMax, baMax, psiMax, f0Max, fwMax, DcMax, vwMax, vinitMax
+8e3 6.0e3 0.5e6 0.1 0.01 !Min Constraint on nucleation
+12e3 8.5e3 2.e6 1.0 0.6 !Max Constraint on nucleation
+1    ! StepType (1=log-normal, 2=normal)
+.003 .0 .003 .0 .003  .0 .003 .003 .02  !StepSize
+.003 .003  .003 .003 .003 !StepSize nucl
+0.05 0.2          ! Data uncertainty (sigma in m)
+
+
+for normal step:
+1e3 0.0005 -0.1 0. 0.1 0.1 0.1 0.1   !T0Min, aMin, baMin, psiMin, f0Min, fwMin, DcMin, vwMin
+1e9 0.5   0.1 0. 3.0 0.1 0.5 0.1   !T0Max, aMax, baMax, psiMax, f0Max, fwMax, DcMax, vwMax
+0. 0. 1.e6 0. 0.01 !Min Constraint on nucleation
+0. 0. 10.e6 0. 0.5 !Max Constraint on nucleation
+2    ! StepType (1=log-normal, 2=normal)
+100 1.e-4  5e-5 .02 .01  0.001 .001 .02   !StepSize
+.02 .02  2000 .02 .0002 !StepSize nucl
