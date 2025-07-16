@@ -1,6 +1,6 @@
 # Dynamic Source Inversion Input Files
 
-This repository contains all necessary input files to perform a dynamic source inversion using **FD3D_TSN** ([Premus et al., 2020](https://doi.org/10.1785/0220190374)). The included files are exemplary for the 2004 Parkfield, California earthquake ([Schliwa et al., 2024](https://doi.org/10.1029/2024JB029410)).
+This repository contains all necessary input files to perform a dynamic source inversion using **FD3D_TSN** ([Premus et al., 2020](https://doi.org/10.1785/0220190374)). The included files are exemplary for the 2004 Parkfield, California earthquake ([Schliwa et al., 2024](https://doi.org/10.1029/2024JB029410)). The FD3D_TSN source code is available [here](https://github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN).
 
 ---
 
