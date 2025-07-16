@@ -59,5 +59,11 @@ This repository contains all necessary input files to perform a dynamic source i
 
 - **`NEZsorGPS.dat`**  
   Provides Green's functions corresponding to the GPS receiver locations.
+  
+- **`NEZsor.dat`**  
+  This file contains the Green's functions for the seismic receivers and must be downloaded separately from the Zenodo repository:
+
+  ```bash
+  wget https://zenodo.org/records/11072717/files/NEZsorGPS.dat
 
 ---
