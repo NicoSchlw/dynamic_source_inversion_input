@@ -1,38 +1,63 @@
-# Dynamic source inversion input files
-This repository contains all input files that are required to run the dynamic source inversion with FD3D_TSN ([Premus et al., 2020](https://doi.org/10.1785/0220190374)). The listed input files are exemplary for the 2004 Parkfield, California earthquake ([Schliwa et al., 2024](https://doi.org/10.1029/2024JB029410)). 
+# Dynamic Source Inversion Input Files
 
-## Code input parameter files
-`input.dat` contains general input parameters as the fault geometry, the number of Green's function sources, and the number of seismic and GPS receivers.
+This repository contains all necessary input files to perform a dynamic source inversion using **FD3D_TSN** ([Premus et al., 2020](https://doi.org/10.1785/0220190374)). The included files are exemplary for the 2004 Parkfield, California earthquake ([Schliwa et al., 2024](https://doi.org/10.1029/2024JB029410)).
 
-`inputfd3d.dat` provides the numerical discretization for the finite-difference dynamic rupture solver.
+---
 
-`inputgps.dat` contains the postseismic modeling duration, the number of GPS receivers, and their weights. 
+## Input Parameter Files
 
-`ìnputinv.dat` describes the inversion settings, including the model parameter discretization, their range, and their step size. The number in the first line dictates whether the code runs a single forward calculation `0`, starts an inversion `1`, or restarts an inversion `2`.
+- **`input.dat`**  
+  Defines general model parameters including fault geometry, the number of Green's function sources, and the number of seismic and GPS receivers.
 
-`forwardmodel.dat` contains the dynamic friction and prestress parameters across the defined fault plane. This represents the starting model when running an inversion.
+- **`inputfd3d.dat`**  
+  Specifies numerical discretization parameters for the finite-difference dynamic rupture solver.
 
-## Material properties and receiver information
+- **`inputgps.dat`**  
+  Sets the postseismic modeling duration, number of GPS receivers, and their respective weights.
 
-`crustal.dat` provides the 1D material structure.
+- **`inputinv.dat`**  
+  Describes inversion settings including model parameter discretization, parameter ranges, and step sizes. The first line determines the mode:  
+  - `0`: Single forward simulation  
+  - `1`: Start a new inversion  
+  - `2`: Restart a previous inversion
 
-`stations.dat` and `stations_GPS.dat` provide the local model coordinates of the seismic and GPS stations.
+- **`forwardmodel.dat`**  
+  Contains the initial model of dynamic friction and prestress parameters across the fault plane, used as the starting point for inversion.
 
-`stainfo.dat` and `gpsinfo.dat` set which components of a receiver are computed and how they are weighted.
+---
 
-`stations.in` provides the latitude and longitude of the epicenter, which was used to calculate the local model coordinates.
+## Material Properties & Receiver Information
 
-## Seismic and geodetic observations
+- **`crustal.dat`**  
+  Specifies the 1D crustal velocity and density structure.
 
-`rvseis*.dat` contain the different components of seismic observations, which constrain the dynamic source inversion
+- **`stations.dat`** and **`stations_GPS.dat`**  
+  Define the local model coordinates of seismic and GPS stations, respectively.
 
-`rvgpsnez.dat` contains coseismic and three months of postseismic GPS observations
+- **`stainfo.dat`** and **`gpsinfo.dat`**  
+  Configure which receiver components are used and how they are weighted during inversion.
 
-## Green's functions 
+- **`stations.in`**  
+  Provides the epicenter's latitude and longitude used to derive local model coordinates.
 
-`sources.dat` provides the locations across the fault plane, for which Green's functions have been calculated.
+---
 
-`NEZsorGPS.dat` contains the Green's functions for the GPS receivers.
+## Seismic and Geodetic Observations
 
+- **`rvseis*.dat`**  
+  Files containing different components of seismic observations used to constrain the dynamic source inversion.
 
+- **`rvgpsnez.dat`**  
+  Contains both coseismic and three months of postseismic GPS data.
 
+---
+
+## Green’s Functions
+
+- **`sources.dat`**  
+  Lists the locations on the fault plane where Green's functions were computed.
+
+- **`NEZsorGPS.dat`**  
+  Provides Green's functions corresponding to the GPS receiver locations.
+
+---
